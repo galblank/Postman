@@ -26,7 +26,7 @@ struct UsersListView: View {
                     .listRowSeparator(.hidden)
                 }
                 .background(Color.white)
-                .listStyle(GroupedListStyle())
+                .listStyle(PlainListStyle())
                 .refreshable(action: {
                     usersRepo.getUsers()
                 })

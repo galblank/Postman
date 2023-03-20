@@ -22,7 +22,7 @@ struct PostsListView: View {
                 .listRowSeparator(.hidden)
             }
             .background(Color.white)
-            .listStyle(GroupedListStyle())
+            .listStyle(PlainListStyle())
             .refreshable(action: {
                 postsRepo.getPostsFor(for: user.id)
             })
