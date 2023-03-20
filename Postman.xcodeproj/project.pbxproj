@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEEAC53F29C76BA4009B6DDB /* PostmanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC53E29C76BA4009B6DDB /* PostmanApp.swift */; };
+		CEEAC54329C76BA6009B6DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC54229C76BA6009B6DDB /* Assets.xcassets */; };
+		CEEAC54629C76BA6009B6DDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC54529C76BA6009B6DDB /* Preview Assets.xcassets */; };
+		CEEAC55029C76BA6009B6DDB /* PostmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC54F29C76BA6009B6DDB /* PostmanTests.swift */; };
+		CEEAC55A29C76BA6009B6DDB /* PostmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC55929C76BA6009B6DDB /* PostmanUITests.swift */; };
+		CEEAC55C29C76BA6009B6DDB /* PostmanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC55B29C76BA6009B6DDB /* PostmanUITestsLaunchTests.swift */; };
+		CEEAC56D29C76D02009B6DDB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC56C29C76D02009B6DDB /* Helpers.swift */; };
+		CEEAC56F29C76DFF009B6DDB /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC56E29C76DFF009B6DDB /* ActivityModel.swift */; };
+		CEEAC57229C76E4F009B6DDB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC57129C76E4F009B6DDB /* ActivityView.swift */; };
+		CEEAC57429C76F2B009B6DDB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC57329C76F2B009B6DDB /* Extensions.swift */; };
+		CEEAC57729C7705C009B6DDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEEAC57629C7705C009B6DDB /* Alamofire */; };
+		CEEAC57A29C7714D009B6DDB /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC57929C7714D009B6DDB /* UserView.swift */; };
+		CEEAC57C29C771F5009B6DDB /* UserProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC57B29C771F5009B6DDB /* UserProfileImage.swift */; };
+		CEEAC57F29C772E1009B6DDB /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = CEEAC57E29C772E1009B6DDB /* AlamofireImage */; };
+		CEEAC58429C78156009B6DDB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC58129C78156009B6DDB /* UserModel.swift */; };
+		CEEAC58529C78156009B6DDB /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC58229C78156009B6DDB /* UsersListView.swift */; };
+		CEEAC58629C78156009B6DDB /* UsersRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC58329C78156009B6DDB /* UsersRepo.swift */; };
+		CEEAC58929C7817D009B6DDB /* PostsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC58729C7817D009B6DDB /* PostsRepo.swift */; };
+		CEEAC58A29C7817D009B6DDB /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC58829C7817D009B6DDB /* PostsListView.swift */; };
+		CEEAC58C29C781B4009B6DDB /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC58B29C781B4009B6DDB /* PostView.swift */; };
+		CEEAC58E29C78351009B6DDB /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC58D29C78351009B6DDB /* PostModel.swift */; };
+		CEEAC59029C78E4B009B6DDB /* EditPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAC58F29C78E4B009B6DDB /* EditPostView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEEAC54C29C76BA6009B6DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEAC53329C76BA4009B6DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEAC53A29C76BA4009B6DDB;
+			remoteInfo = Postman;
+		};
+		CEEAC55629C76BA6009B6DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEAC53329C76BA4009B6DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEAC53A29C76BA4009B6DDB;
+			remoteInfo = Postman;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEEAC53B29C76BA4009B6DDB /* Postman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAC53E29C76BA4009B6DDB /* PostmanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanApp.swift; sourceTree = "<group>"; };
+		CEEAC54229C76BA6009B6DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEAC54529C76BA6009B6DDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEEAC54B29C76BA6009B6DDB /* PostmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAC54F29C76BA6009B6DDB /* PostmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanTests.swift; sourceTree = "<group>"; };
+		CEEAC55529C76BA6009B6DDB /* PostmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAC55929C76BA6009B6DDB /* PostmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanUITests.swift; sourceTree = "<group>"; };
+		CEEAC55B29C76BA6009B6DDB /* PostmanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEEAC56C29C76D02009B6DDB /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		CEEAC56E29C76DFF009B6DDB /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		CEEAC57129C76E4F009B6DDB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		CEEAC57329C76F2B009B6DDB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CEEAC57929C7714D009B6DDB /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserView.swift; path = Users/UserView.swift; sourceTree = "<group>"; };
+		CEEAC57B29C771F5009B6DDB /* UserProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileImage.swift; path = Users/UserProfileImage.swift; sourceTree = "<group>"; };
+		CEEAC58129C78156009B6DDB /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = Users/UserModel.swift; sourceTree = "<group>"; };
+		CEEAC58229C78156009B6DDB /* UsersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersListView.swift; path = Users/UsersListView.swift; sourceTree = "<group>"; };
+		CEEAC58329C78156009B6DDB /* UsersRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersRepo.swift; path = Users/UsersRepo.swift; sourceTree = "<group>"; };
+		CEEAC58729C7817D009B6DDB /* PostsRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsRepo.swift; sourceTree = "<group>"; };
+		CEEAC58829C7817D009B6DDB /* PostsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
+		CEEAC58B29C781B4009B6DDB /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		CEEAC58D29C78351009B6DDB /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		CEEAC58F29C78E4B009B6DDB /* EditPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEAC53829C76BA4009B6DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEAC57729C7705C009B6DDB /* Alamofire in Frameworks */,
+				CEEAC57F29C772E1009B6DDB /* AlamofireImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEAC54829C76BA6009B6DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEAC55229C76BA6009B6DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEEAC53229C76BA4009B6DDB = {
+			isa = PBXGroup;
+			children = (
+				CEEAC53D29C76BA4009B6DDB /* Postman */,
+				CEEAC54E29C76BA6009B6DDB /* PostmanTests */,
+				CEEAC55829C76BA6009B6DDB /* PostmanUITests */,
+				CEEAC53C29C76BA4009B6DDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEAC53C29C76BA4009B6DDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAC53B29C76BA4009B6DDB /* Postman.app */,
+				CEEAC54B29C76BA6009B6DDB /* PostmanTests.xctest */,
+				CEEAC55529C76BA6009B6DDB /* PostmanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEAC53D29C76BA4009B6DDB /* Postman */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAC58029C7811B009B6DDB /* Posts */,
+				CEEAC57829C770BA009B6DDB /* Users */,
+				CEEAC57029C76E30009B6DDB /* Helpers */,
+				CEEAC53E29C76BA4009B6DDB /* PostmanApp.swift */,
+				CEEAC54229C76BA6009B6DDB /* Assets.xcassets */,
+				CEEAC54429C76BA6009B6DDB /* Preview Content */,
+			);
+			path = Postman;
+			sourceTree = "<group>";
+		};
+		CEEAC54429C76BA6009B6DDB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAC54529C76BA6009B6DDB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEEAC54E29C76BA6009B6DDB /* PostmanTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAC54F29C76BA6009B6DDB /* PostmanTests.swift */,
+			);
+			path = PostmanTests;
+			sourceTree = "<group>";
+		};
+		CEEAC55829C76BA6009B6DDB /* PostmanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAC55929C76BA6009B6DDB /* PostmanUITests.swift */,
+				CEEAC55B29C76BA6009B6DDB /* PostmanUITestsLaunchTests.swift */,
+			);
+			path = PostmanUITests;
+			sourceTree = "<group>";
+		};
+		CEEAC57029C76E30009B6DDB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAC56E29C76DFF009B6DDB /* ActivityModel.swift */,
+				CEEAC56C29C76D02009B6DDB /* Helpers.swift */,
+				CEEAC57129C76E4F009B6DDB /* ActivityView.swift */,
+				CEEAC57329C76F2B009B6DDB /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CEEAC57829C770BA009B6DDB /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAC58129C78156009B6DDB /* UserModel.swift */,
+				CEEAC58229C78156009B6DDB /* UsersListView.swift */,
+				CEEAC58329C78156009B6DDB /* UsersRepo.swift */,
+				CEEAC57929C7714D009B6DDB /* UserView.swift */,
+				CEEAC57B29C771F5009B6DDB /* UserProfileImage.swift */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		CEEAC58029C7811B009B6DDB /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAC58B29C781B4009B6DDB /* PostView.swift */,
+				CEEAC58829C7817D009B6DDB /* PostsListView.swift */,
+				CEEAC58729C7817D009B6DDB /* PostsRepo.swift */,
+				CEEAC58D29C78351009B6DDB /* PostModel.swift */,
+				CEEAC58F29C78E4B009B6DDB /* EditPostView.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEAC53A29C76BA4009B6DDB /* Postman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEAC55F29C76BA6009B6DDB /* Build configuration list for PBXNativeTarget "Postman" */;
+			buildPhases = (
+				CEEAC53729C76BA4009B6DDB /* Sources */,
+				CEEAC53829C76BA4009B6DDB /* Frameworks */,
+				CEEAC53929C76BA4009B6DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Postman;
+			packageProductDependencies = (
+				CEEAC57629C7705C009B6DDB /* Alamofire */,
+				CEEAC57E29C772E1009B6DDB /* AlamofireImage */,
+			);
+			productName = Postman;
+			productReference = CEEAC53B29C76BA4009B6DDB /* Postman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEEAC54A29C76BA6009B6DDB /* PostmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEAC56229C76BA6009B6DDB /* Build configuration list for PBXNativeTarget "PostmanTests" */;
+			buildPhases = (
+				CEEAC54729C76BA6009B6DDB /* Sources */,
+				CEEAC54829C76BA6009B6DDB /* Frameworks */,
+				CEEAC54929C76BA6009B6DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEAC54D29C76BA6009B6DDB /* PBXTargetDependency */,
+			);
+			name = PostmanTests;
+			productName = PostmanTests;
+			productReference = CEEAC54B29C76BA6009B6DDB /* PostmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEEAC55429C76BA6009B6DDB /* PostmanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEAC56529C76BA6009B6DDB /* Build configuration list for PBXNativeTarget "PostmanUITests" */;
+			buildPhases = (
+				CEEAC55129C76BA6009B6DDB /* Sources */,
+				CEEAC55229C76BA6009B6DDB /* Frameworks */,
+				CEEAC55329C76BA6009B6DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEAC55729C76BA6009B6DDB /* PBXTargetDependency */,
+			);
+			name = PostmanUITests;
+			productName = PostmanUITests;
+			productReference = CEEAC55529C76BA6009B6DDB /* PostmanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEAC53329C76BA4009B6DDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CEEAC53A29C76BA4009B6DDB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CEEAC54A29C76BA6009B6DDB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CEEAC53A29C76BA4009B6DDB;
+					};
+					CEEAC55429C76BA6009B6DDB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CEEAC53A29C76BA4009B6DDB;
+					};
+				};
+			};
+			buildConfigurationList = CEEAC53629C76BA4009B6DDB /* Build configuration list for PBXProject "Postman" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEAC53229C76BA4009B6DDB;
+			packageReferences = (
+				CEEAC57529C7705C009B6DDB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CEEAC57D29C772E1009B6DDB /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = CEEAC53C29C76BA4009B6DDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEAC53A29C76BA4009B6DDB /* Postman */,
+				CEEAC54A29C76BA6009B6DDB /* PostmanTests */,
+				CEEAC55429C76BA6009B6DDB /* PostmanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEAC53929C76BA4009B6DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEAC54629C76BA6009B6DDB /* Preview Assets.xcassets in Resources */,
+				CEEAC54329C76BA6009B6DDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEAC54929C76BA6009B6DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEAC55329C76BA6009B6DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEAC53729C76BA4009B6DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEAC56F29C76DFF009B6DDB /* ActivityModel.swift in Sources */,
+				CEEAC58529C78156009B6DDB /* UsersListView.swift in Sources */,
+				CEEAC58A29C7817D009B6DDB /* PostsListView.swift in Sources */,
+				CEEAC58E29C78351009B6DDB /* PostModel.swift in Sources */,
+				CEEAC58929C7817D009B6DDB /* PostsRepo.swift in Sources */,
+				CEEAC58629C78156009B6DDB /* UsersRepo.swift in Sources */,
+				CEEAC57429C76F2B009B6DDB /* Extensions.swift in Sources */,
+				CEEAC59029C78E4B009B6DDB /* EditPostView.swift in Sources */,
+				CEEAC58429C78156009B6DDB /* UserModel.swift in Sources */,
+				CEEAC57C29C771F5009B6DDB /* UserProfileImage.swift in Sources */,
+				CEEAC57229C76E4F009B6DDB /* ActivityView.swift in Sources */,
+				CEEAC56D29C76D02009B6DDB /* Helpers.swift in Sources */,
+				CEEAC57A29C7714D009B6DDB /* UserView.swift in Sources */,
+				CEEAC58C29C781B4009B6DDB /* PostView.swift in Sources */,
+				CEEAC53F29C76BA4009B6DDB /* PostmanApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEAC54729C76BA6009B6DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEAC55029C76BA6009B6DDB /* PostmanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEAC55129C76BA6009B6DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEAC55A29C76BA6009B6DDB /* PostmanUITests.swift in Sources */,
+				CEEAC55C29C76BA6009B6DDB /* PostmanUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEAC54D29C76BA6009B6DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEAC53A29C76BA4009B6DDB /* Postman */;
+			targetProxy = CEEAC54C29C76BA6009B6DDB /* PBXContainerItemProxy */;
+		};
+		CEEAC55729C76BA6009B6DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEAC53A29C76BA4009B6DDB /* Postman */;
+			targetProxy = CEEAC55629C76BA6009B6DDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CEEAC55D29C76BA6009B6DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEEAC55E29C76BA6009B6DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEEAC56029C76BA6009B6DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Postman/Preview Content\"";
+				DEVELOPMENT_TEAM = CWWWF47FJ3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kubra.Postman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEEAC56129C76BA6009B6DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Postman/Preview Content\"";
+				DEVELOPMENT_TEAM = CWWWF47FJ3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kubra.Postman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEEAC56329C76BA6009B6DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWWWF47FJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kubra.PostmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postman.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Postman";
+			};
+			name = Debug;
+		};
+		CEEAC56429C76BA6009B6DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWWWF47FJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kubra.PostmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postman.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Postman";
+			};
+			name = Release;
+		};
+		CEEAC56629C76BA6009B6DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWWWF47FJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kubra.PostmanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Postman;
+			};
+			name = Debug;
+		};
+		CEEAC56729C76BA6009B6DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWWWF47FJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kubra.PostmanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Postman;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEAC53629C76BA4009B6DDB /* Build configuration list for PBXProject "Postman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEAC55D29C76BA6009B6DDB /* Debug */,
+				CEEAC55E29C76BA6009B6DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEAC55F29C76BA6009B6DDB /* Build configuration list for PBXNativeTarget "Postman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEAC56029C76BA6009B6DDB /* Debug */,
+				CEEAC56129C76BA6009B6DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEAC56229C76BA6009B6DDB /* Build configuration list for PBXNativeTarget "PostmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEAC56329C76BA6009B6DDB /* Debug */,
+				CEEAC56429C76BA6009B6DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEAC56529C76BA6009B6DDB /* Build configuration list for PBXNativeTarget "PostmanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEAC56629C76BA6009B6DDB /* Debug */,
+				CEEAC56729C76BA6009B6DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEEAC57529C7705C009B6DDB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		CEEAC57D29C772E1009B6DDB /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEEAC57629C7705C009B6DDB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEAC57529C7705C009B6DDB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CEEAC57E29C772E1009B6DDB /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEAC57D29C772E1009B6DDB /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CEEAC53329C76BA4009B6DDB /* Project object */;
+}
